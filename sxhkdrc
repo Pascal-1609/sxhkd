@@ -140,6 +140,16 @@ XF86AudioRaiseVolume
 XF86AudioMute
 	amixer set Master toggle
 
+# multimedia keys
+XF86AudioPlay
+	playerctl play-pause
+XF86AudioStop
+	playerctl stop
+XF86AudioNext
+	playerctl next
+XF86AudioPrev
+	playerctl previous
+
 # brightness control
 XF86MonBrightnessDown
 	brightnessctl set 5%-
