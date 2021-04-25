@@ -128,6 +128,10 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
+#
+# user defined hotkeys
+#
+
 # volume control
 XF86AudioLowerVolume
 	amixer set Master 5%-
@@ -138,6 +142,8 @@ XF86AudioMute
 
 # brightness control
 XF86MonBrightnessDown
-	xbacklight -dec 5
+	brightnessctl set 5%-
 XF86MonBrightnessUp
-	xbacklight -inc 5
+	brightnessctl set +5%
+
+
