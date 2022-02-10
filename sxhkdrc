@@ -12,7 +12,7 @@ super + f
 
 # terminal emulator
 super + Return
-	st
+	kitty
 
 # program launcher
 super + @space
